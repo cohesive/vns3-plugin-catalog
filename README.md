@@ -4,4 +4,10 @@
 
 ## Adding a plugin
 
+```
+name: 
+image_url: 
+
+```
+
 
