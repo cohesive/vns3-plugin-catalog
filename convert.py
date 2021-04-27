@@ -98,5 +98,6 @@ if __name__ == "__main__":
         load_plugin_yaml(plugin_dir, should_raise=True) for plugin_dir in plugin_directories
     ]
     output_file = "plugin-catalog"
-    log("Writing output to file %s" % )
-    write_outfile(plugins_data, filename=output_file, output_format="json")
+    output_format = "json"
+    log("Writing output to file %s.%s" % (output_file, output_format))
+    write_outfile(plugins_data, filename=output_file, output_format=output_format)
