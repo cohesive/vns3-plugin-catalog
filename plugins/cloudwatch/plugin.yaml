@@ -1,0 +1,10 @@
+name: Cloudwatch
+description: The CloudWatch Logging Container pulls live logs from a host VNS3 controller
+  via the AWS CloudWatch Logs agent and displays these logs in AWS CloudWatch. A
+  CloudFormation template is used to automatically create all the necessary AWS
+  components.
+documentation: https://docs.cohesive.net/docs/network-edge-plugins/cloudwatch-logs/
+image_url: https://vns3-containers-read-all.s3.amazonaws.com/CloudWatch_Logger/CloudWatch_Logger_20191022.tar.gz
+categories:
+  - monitoring
+  - logging

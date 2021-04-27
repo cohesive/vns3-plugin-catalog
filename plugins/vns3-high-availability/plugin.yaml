@@ -1,0 +1,7 @@
+name: VNS3 High Availability
+description: Automate a highly available routing configuration for your VNS3 mesh
+  network.
+documentation: https://docs.cohesive.net/docs/network-edge-plugins/vns3-ha-plugin/
+image_url: https://vns3-containers-read-all.s3.amazonaws.com/HA_Container/haplugin-pm.tar.gz
+categories:
+  - performance

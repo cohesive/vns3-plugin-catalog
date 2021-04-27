@@ -1,0 +1,8 @@
+name: [The name of plugin as displayed in Marketplace]
+description: >
+  A description for your plugin. Please describe your solution's use-cases.
+documentation: https://link.to.plugin.documenation.com
+image_url: https://link.to.image.tgz
+categories:         # should have at least 1 category. Please see README for categories.
+  - category 1
+  - category 2

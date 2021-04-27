@@ -1,0 +1,6 @@
+name: Overlay Engine
+description: Collect, monitor and alert on packetloss statistics.
+documentation: https://docs.cohesive.net/docs/network-edge-plugins/overlay-engine/
+image_url: https://vns3-containers-read-all.s3.amazonaws.com/Overlayengine/overlayengine_20200510.tar.gz
+categories:
+  - performance

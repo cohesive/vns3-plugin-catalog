@@ -1,0 +1,7 @@
+name: Lets Encrypt
+description: Easily manage and automate your VNS3 Controller's SSL certificate install
+  with Lets Encrypt.
+documentation: https://docs.cohesive.net/docs/network-edge-plugins/lets-encrypt/
+image_url: https://vns3-containers-read-all.s3.amazonaws.com/LetsEncrypt/LetsEncrypt-1.0-20190710.tar.gz
+categories:
+  - security
