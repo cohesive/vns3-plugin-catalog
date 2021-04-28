@@ -8,16 +8,26 @@ This is the master list of plugins that are installable in VNS3. They include Co
 4. In the directory created in #1, create a new file called plugin.yaml
 5. Populate your plugin.yaml file with 
 
+
+Name and description - This will be displayed in the plugin catalog
 ```
-# This will be displayed in the plugin catalog
 name: Plugin Name
 description: Collect, monitor and alert on packetloss statistics.
-# A link to documentation for your plugin should also be provided and will be linked to in the VNS3 catalog
+```
+
+Documentation - A link to documentation for your plugin should also be provided and will be linked to in the VNS3 catalog
+```
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/overlay-engine/
-# One of image_url or setup_url should be provided. Ideally an image url can be provided such that VNS3 can immediately install your plugin. If instead you require a workflow whereby a client must first sign up with your service before being able to download a VNS3 plugin, the setup_url should be used linking to how to acquire this plugin for download.
+```
+
+Image url or instructions on how to attain an image - One of image_url or setup_url should be provided. Ideally an image url can be provided such that VNS3 can immediately install your plugin. If instead you require a workflow whereby a client must first sign up with your service before being able to download a VNS3 plugin, the setup_url should be used linking to how to acquire this plugin for download.
+```
 image_url: https://vns3-containers-read-all.s3.amazonaws.com/Overlayengine/overlayengine_20200510.tar.gz
 setup_url: https://how.to.setup.com
-# Some categories should be provided
+```
+
+Categories - a list of categories in which your plugin falls
+```
 categories:
   - performance
 ```
