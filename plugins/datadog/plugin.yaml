@@ -7,5 +7,6 @@ categories:
   - logging
   - monitoring
 tags:
-  - key:value
+  - key: imakey
+    value: imavalue
 version: X.Y.Z
