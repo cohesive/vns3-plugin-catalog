@@ -1,3 +1,4 @@
+import argparse
 import json
 import os
 import pathlib
@@ -88,7 +89,24 @@ def write_outfile(data, filename=Constants.OutFile, output_format=Constants.Outp
     return filename
 
 
+def get_arg_parser():
+    parser = argparse.ArgumentParser(
+        description='Plugin data JSON converter CLI',
+        formatter_class=argparse.RawTextHelpFormatter,
+        epilog="""
+        Convert plugin repository data to valid JSON data model.
+        """
+    )
+
+    parser.add_argument('-o', '--outfile', help='outfile name without the suffix. Suffix determined by format', dest='output_file', type=str, default='catalog')
+    parser.add_argument('-f', '--format', dest='output_format', help='Output format: json or yaml', type=str, default='json')
+
+    return parser
+
+
 if __name__ == "__main__":
+    parser = get_arg_parser()
+    parsed_args = vars(parser.parse_args())
     log("Starting gather plugins")
     plugins_dir_path = get_plugins_path()
     log("Reading plugins from %s" % plugins_dir_path)
@@ -97,7 +115,7 @@ if __name__ == "__main__":
     plugins_data = [
         load_plugin_yaml(plugin_dir, should_raise=True) for plugin_dir in plugin_directories
     ]
-    output_file = "plugin-catalog"
-    output_format = "json"
+    output_file = parsed_args["output_file"]
+    output_format = parsed_args["output_format"]
     log("Writing output to file %s.%s" % (output_file, output_format))
     write_outfile(plugins_data, filename=output_file, output_format=output_format)

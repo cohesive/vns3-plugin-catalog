@@ -1,2 +1,2 @@
 .env
-plugin-catalog.json
+*.json
