@@ -7,3 +7,7 @@ image_url: https://vns3-containers-read-all.s3.amazonaws.com/PingProxy/pingapi.e
 categories:
   - monitoring
   - logging
+tags:
+  baseOS: Ubuntu 20.04
+  ssh: true
+version: X.Y.Z

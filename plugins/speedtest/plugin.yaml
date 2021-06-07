@@ -6,3 +6,7 @@ image_url: https://vns3-containers-read-all.s3.amazonaws.com/speedtest/SpeedTest
 categories:
   - performance
   - monitoring
+tags:
+  baseOS: Ubuntu 20.04
+  ssh: true
+version: X.Y.Z

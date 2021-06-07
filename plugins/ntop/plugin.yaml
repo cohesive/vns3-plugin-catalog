@@ -5,3 +5,7 @@ documentation: https://docs.cohesive.net/docs/network-edge-plugins/ntop/
 image_url: https://vns3-containers-read-all.s3.amazonaws.com/ntop/ntop.tar.gz
 categories:
   - monitoring
+tags:
+  baseOS: Ubuntu 20.04
+  ssh: true
+version: X.Y.Z

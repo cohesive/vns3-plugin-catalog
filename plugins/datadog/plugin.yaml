@@ -7,6 +7,6 @@ categories:
   - logging
   - monitoring
 tags:
-  - key: imakey
-    value: imavalue
+  baseOS: Ubuntu 20.04
+  ssh: true
 version: X.Y.Z
