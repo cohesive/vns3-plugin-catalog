@@ -11,6 +11,8 @@ from typing import List, Dict
 PLUGINS_DIR = "plugins"
 PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 PLUGIN_DATA_FILE = "plugin.yaml"
+CUR_BRANCH = os.environ.get("BRANCH", "master")
+GITHUB_RAW_CONTENT_REPO_URL = "https://raw.githubusercontent.com/cohesive/vns3-plugin-catalog/%s" % CUR_BRANCH
 
 
 class Constants:
@@ -61,7 +63,19 @@ def load_plugin_yaml(plugin_directory, should_raise=False) -> Dict:
         if should_raise:
             raise FileNotFoundError(plugin_data_path)
         return None
-    return yaml.load(open(plugin_data_path, 'r').read(), Loader=yaml.Loader)
+
+    plugin_dict = yaml.load(open(plugin_data_path, 'r').read(), Loader=yaml.Loader)
+    if 'logo' in plugin_dict:
+        plugin_dir_name = plugin_directory.split('/')[-1].rstrip('/')
+        logo_url = "{base_url}/plugins/{plugin_dir}/{logo_file}".format(
+            base_url=GITHUB_RAW_CONTENT_REPO_URL,
+            plugin_dir=plugin_dir_name,
+            logo_file=plugin_dict['logo'].lstrip('/')
+        )
+
+        plugin_dict['logo'] = logo_url
+    return plugin_dict
+
 
 
 def write_outfile(data, filename=Constants.OutFile, output_format=Constants.OutputFormatJson):
