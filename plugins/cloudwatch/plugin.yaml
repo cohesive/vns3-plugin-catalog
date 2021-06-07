@@ -12,3 +12,4 @@ tags:
   baseOS: Ubuntu 20.04
   ssh: true
 version: X.Y.Z
+logo: images/CWicon.png

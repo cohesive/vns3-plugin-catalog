@@ -37,6 +37,7 @@ The available categories are:
 - monitoring
 - logging
 - security
+- proxy
 
 If your plugin does not fall into one of the provided categories and would like to suggest a new category, feel free to put a pull request into this repo editing this README.md. Please create a branch called `add-category-[new category]` for your pull request.
 

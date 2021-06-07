@@ -1,0 +1,11 @@
+name: HA Proxy
+description: A layer 5 proxy and DNS resolver for more network reactivity.
+documentation: https://docs.cohesive.net/docs/network-edge-plugins/ha-proxy/
+image_url: https://vns3-containers-read-all.s3.amazonaws.com/HAproxy_Resolver/HAproxy_22_Resolver_Manual_base_1820201202.tar.gz
+categories:
+  - proxy
+tags:
+  baseOS: Ubuntu 18.04
+  ssh: true
+version: X.Y.Z
+logo: images/haproxy.png
