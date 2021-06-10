@@ -9,4 +9,5 @@ tags:
   baseOS: Ubuntu 20.04
   ssh: true
 version: X.Y.Z
-logo: images/lets-encrypt-logo.png 
+logo: images/lets-encrypt-logo.png
+provider_code: 111111

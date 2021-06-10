@@ -8,3 +8,4 @@ tags:
   baseOS: Ubuntu 20.04
   ssh: true
 version: X.Y.Z
+provider_code: 111111

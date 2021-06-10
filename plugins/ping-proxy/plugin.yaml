@@ -12,3 +12,4 @@ tags:
   ssh: true
 version: X.Y.Z
 logo: images/pingproxy_icon.png
+provider_code: 111111

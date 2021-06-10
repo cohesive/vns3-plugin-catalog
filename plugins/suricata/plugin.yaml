@@ -10,3 +10,4 @@ tags:
   ssh: true
 version: X.Y.Z
 logo: images/suricata-logo.png
+provider_code: 111111
