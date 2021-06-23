@@ -4,7 +4,6 @@ description: >
   used networking tools such as tcpdump, tshark, net-tools and more.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/base-container/
 image_url: https://vns3-containers-read-all.s3.amazonaws.com/VNS3_Base/vns3_base_2004_20210414.tar.gz
-support_url: 
 categories:
   - monitoring
   - logging
