@@ -1,7 +1,7 @@
-name: Ping Proxy
-description: The PingProxy container runs a basic RESTful API server. It has two
-  endpoints, /ping and /telnet, which accept a hostname (and port, in the case of
-  telnet) as JSON data and return an integer result.
+name: Ping Monitor
+description: >
+  The Ping Monitoring plugin provides an API for querying connectivity status of your VNS3 controller as 
+  well as a monitoring process for verifying connectivity for hosts in your network.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/pingproxy
 image_url: https://vns3-containers-read-all.s3.amazonaws.com/PingProxy/pingapi.export.tar.gz
 categories:

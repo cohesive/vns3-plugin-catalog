@@ -1,5 +1,5 @@
 name: Cloudwatch
-description: The CloudWatch Logging Container pulls live logs from a host VNS3 controller
+description: The CloudWatch Logging Container pulls live logs from a VNS3 controller
   via the AWS CloudWatch Logs agent and displays these logs in AWS CloudWatch. A
   CloudFormation template is used to automatically create all the necessary AWS
   components.
@@ -11,6 +11,5 @@ categories:
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
-version: X.Y.Z
 logo: images/CWicon.png
 provider_code: 111111

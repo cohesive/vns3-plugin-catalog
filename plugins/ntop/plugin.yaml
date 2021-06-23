@@ -8,6 +8,5 @@ categories:
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
-version: X.Y.Z
 logo: images/ntop_icon.png
 provider_code: 111111

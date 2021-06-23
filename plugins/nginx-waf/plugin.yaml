@@ -9,6 +9,5 @@ categories:
 tags:
   baseOS: Ubuntu 18.04
   ssh: true
-version: X.Y.Z
 logo: images/nginx-logo.png
 provider_code: 111111

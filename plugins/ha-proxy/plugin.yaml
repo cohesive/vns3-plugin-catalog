@@ -7,6 +7,5 @@ categories:
 tags:
   baseOS: Ubuntu 18.04
   ssh: true
-version: X.Y.Z
 logo: images/haproxy.png
 provider_code: 111111

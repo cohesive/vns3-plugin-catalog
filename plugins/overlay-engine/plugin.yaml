@@ -1,5 +1,7 @@
 name: Overlay Engine
-description: Collect, monitor and alert on packetloss statistics.
+description: >
+  Overlay Engines make your Overlay Network faster. This plugin will increase overlay engine 
+  throughput with Overlay Engines running on a VNS3 controller in a jumbo frame enabled cloud environment.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/overlay-engine/
 image_url: https://vns3-containers-read-all.s3.amazonaws.com/Overlayengine/overlayengine_20200510.tar.gz
 categories:
@@ -7,6 +9,5 @@ categories:
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
-version: X.Y.Z
 provider_code: 111111
 logo: images/cohesive-logo-no-bg.png
