@@ -10,7 +10,11 @@ categories:
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
+keyphrases:
+  - tshark
+  - tcpdump
+  - iftop
+  - nettools
 logo: images/Linux_Containers_logo.png
+version: 1.0.0
 provider_code: 111111
-permissions:
- - identity-creation
