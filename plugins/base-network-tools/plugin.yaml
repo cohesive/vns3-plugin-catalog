@@ -3,6 +3,7 @@ description: >
   The image that Cohesive uses as the base image for its plugins. It contains commonly
   used networking tools such as tcpdump, tshark, net-tools and more.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/base-container/
+support: https://support.cohesive.net
 image_url: https://vns3-containers-read-all.s3.amazonaws.com/VNS3_Base/vns3_base_2004_20210414.tar.gz
 categories:
   - monitoring
@@ -16,5 +17,6 @@ keyphrases:
   - iftop
   - nettools
 logo: images/Linux_Containers_logo.png
-version: 1.0.0
+version: "20210414"
 provider_code: 111111
+vns3_compatability: 5<=

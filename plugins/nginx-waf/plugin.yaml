@@ -3,11 +3,18 @@ description: >
   Nginx Modsecurity plugin for advanced firewall needs. The NGINX ModSecurity WAF 
   can be used to stop a broad range of Layer 7 attacks and respond to emerging threats with virtual patching.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/waf/
-image_url: https://vns3-containers-read-all.s3.amazonaws.com/HAproxy_Resolver/HAproxy_22_Resolver_Manual_base_1820201202.tar.gz
+support: https://support.cohesive.net
+image_url: https://vns3-containers-read-all.s3.amazonaws.com/WAF_modsecurity_Base/WAF_modsecurity_nginx_3.0.export.tar.gz
 categories:
   - proxy
 tags:
   baseOS: Ubuntu 18.04
   ssh: true
+  nginx: 3.0
+keyphrases:
+  - waf
+  - web application firewall
+version: "20210421"
 logo: images/nginx-logo.png
 provider_code: 111111
+vns3_compatability: 5<=

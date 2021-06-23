@@ -1,6 +1,7 @@
 name: Suricata NIDs
 description: Add network intrusion detection to your network with Suricata.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/nids/
+support: https://support.cohesive.net
 image_url: https://vns3-containers-read-all.s3.amazonaws.com/NIDS_suricata_Base/NIDS_suricata_Base.export.tar.gz
 categories:
   - monitoring
