@@ -9,5 +9,8 @@ categories:
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
-version: X.Y.Z
+keyphrases:
+  - HA
+version: "20201029"
 provider_code: 111111
+vns3_compatability: 5<=

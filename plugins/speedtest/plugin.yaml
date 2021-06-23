@@ -10,6 +10,8 @@ categories:
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
-version: X.Y.Z
+  ui: true
+version: "20190330"
 logo: images/speedtest-logo.png
 provider_code: 111111
+vns3_compatability: 5<=

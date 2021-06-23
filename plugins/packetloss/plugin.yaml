@@ -8,5 +8,8 @@ categories:
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
-version: X.Y.Z
+keyphrases:
+  - dropped packets
+version: "20191010"
 provider_code: 111111
+vns3_compatability: 5<=

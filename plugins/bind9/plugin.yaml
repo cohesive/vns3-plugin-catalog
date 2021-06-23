@@ -1,0 +1,17 @@
+name: Bind9 DNS
+description: A full featured DNS system for all of your DNS requirements
+documentation: 
+support: https://support.cohesive.net
+image_url: 
+categories:
+  - networking
+tags:
+  baseOS: Ubuntu 20.04
+  ssh: true
+keyphrases:
+  - DNS
+  - Relay
+  - Resolution
+logo: 
+provider_code: 111111
+vns3_compatability: 5<=
