@@ -75,6 +75,8 @@ def load_plugin_yaml(plugin_directory, should_raise=False) -> Dict:
 
         plugin_dict['logo'] = logo_url
 
+    if plugin_dict.get('description'):
+        plugin_dict['description'] = plugin_dict['description'].strip()
 
     plugin_dict['id'] = plugin_dict['name'].lower().replace(' ', '-')
 
