@@ -19,4 +19,7 @@ pip install pyyaml
 echo "Converting to $OutFormat."
 python convert.py --outfile $OutFile --format $OutFormat
 
-deactivate
+if [ $? -gt 0 ]; then
+    echo "ERROR"
+    exit 1
+fi
