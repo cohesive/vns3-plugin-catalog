@@ -7,6 +7,7 @@ support: https://support.cohesive.net
 image_url: https://vns3-containers-read-all.s3.amazonaws.com/WAF_modsecurity_Base/WAF_modsecurity_nginx_3.0.export.tar.gz
 categories:
   - proxy
+  - networking
 tags:
   baseOS: Ubuntu 18.04
   ssh: true
@@ -14,6 +15,7 @@ tags:
 keyphrases:
   - waf
   - web application firewall
+  - load balancer
 version: "20210421"
 logo: images/nginx-logo.png
 provider_code: 111111
