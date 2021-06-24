@@ -1,9 +1,9 @@
 name: Sumologic
 description: >
   Collect VNS3 data and logs and network information and report to Sumologic 
-documentation: 
+documentation: null
 support: https://support.cohesive.net
-image_url: 
+image_url: null
 categories:
   - monitoring
   - logging
@@ -12,7 +12,8 @@ tags:
   ssh: true
 keyphrases:
   - logger
-logo: 
+logo: null
 provider_code: 111111
-version: 
+version: null
 vns3_compatability: 5<=
+draft: true
