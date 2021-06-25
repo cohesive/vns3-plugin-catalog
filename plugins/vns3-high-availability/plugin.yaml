@@ -13,4 +13,4 @@ keyphrases:
   - HA
 version: "2.2.1"
 provider_code: 111111
-vns3_compatability: 5<=
+vns3_compatability: 5+

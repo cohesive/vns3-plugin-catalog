@@ -15,4 +15,4 @@ keyphrases:
 logo: images/lets-encrypt-logo.png
 provider_code: 111111
 version: "20190710"
-vns3_compatability: 5<=
+vns3_compatability: 5+

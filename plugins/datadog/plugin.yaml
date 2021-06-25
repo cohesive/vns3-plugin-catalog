@@ -15,4 +15,4 @@ keyphrases:
   - status
 logo: images/datadog.png
 provider_code: 111111
-vns3_compatability: 5<=
+vns3_compatability: 5+

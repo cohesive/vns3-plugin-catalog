@@ -20,4 +20,4 @@ keyphrases:
 version: "20210625"
 logo: images/suricata-logo.png
 provider_code: 111111
-vns3_compatability: 5<=
+vns3_compatability: 5+

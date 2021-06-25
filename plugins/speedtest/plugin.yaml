@@ -14,4 +14,4 @@ tags:
 version: "20190330"
 logo: images/speedtest-logo.png
 provider_code: 111111
-vns3_compatability: 5<=
+vns3_compatability: 5+

@@ -13,4 +13,4 @@ tags:
   ssh: true
 version: "20210414"
 provider_code: 111111
-vns3_compatability: 5<=
+vns3_compatability: 5+

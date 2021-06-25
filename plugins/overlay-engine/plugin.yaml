@@ -13,4 +13,4 @@ tags:
 provider_code: 111111
 logo: images/cohesive-logo-no-bg.png
 version: "20200510"
-vns3_compatability: 5<=
+vns3_compatability: 5+

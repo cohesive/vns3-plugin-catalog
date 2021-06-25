@@ -20,4 +20,4 @@ keyphrases:
 logo: images/Linux_Containers_logo.png
 version: "20210414"
 provider_code: 111111
-vns3_compatability: 5<=
+vns3_compatability: 5+
