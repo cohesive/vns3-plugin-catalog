@@ -1,4 +1,4 @@
-name: HA Proxy DNS Resolver
+name: HAProxy DNS Resolver
 description: >
   A free, vast and reliable layer 5 proxy and DNS resolver for 
   load balancing and more network reactivity.
