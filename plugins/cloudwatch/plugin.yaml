@@ -11,6 +11,8 @@ categories:
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
-version: X.Y.Z
+  log-access: true
+keyphrases:
+  - aws
 logo: images/CWicon.png
 provider_code: 111111

@@ -1,0 +1,17 @@
+name: Ping Monitor
+description: >
+  The Ping Monitoring plugin provides an API for querying connectivity status of your VNS3 controller as 
+  well as a monitoring process for verifying connectivity for hosts in your network.
+documentation: https://docs.cohesive.net/docs/network-edge-plugins/pingproxy
+support: https://support.cohesive.net
+image_url: https://vns3-containers-read-all.s3.amazonaws.com/PingProxy/pingproxy2_beta_20210122.tar.gz
+categories:
+  - monitoring
+  - logging
+tags:
+  baseOS: Ubuntu 20.04
+  ssh: true
+version: "20210122"
+logo: images/pingproxy_icon.png
+provider_code: 111111
+vns3_compatability: -4.5,5+
