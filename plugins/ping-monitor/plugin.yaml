@@ -14,4 +14,4 @@ tags:
 version: "20210122"
 logo: images/pingproxy_icon.png
 provider_code: 111111
-vns3_compatability: 5+
+vns3_compatability: -4.5,5+

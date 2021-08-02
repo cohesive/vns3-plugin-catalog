@@ -10,6 +10,7 @@ categories:
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
+  overlay-access: true
 provider_code: 111111
 logo: images/cohesive-logo-no-bg.png
 version: "20200510"

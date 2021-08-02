@@ -11,6 +11,7 @@ categories:
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
+  log-access: true
 version: "20210414"
 provider_code: 111111
 vns3_compatability: 5+

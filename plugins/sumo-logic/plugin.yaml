@@ -10,6 +10,7 @@ categories:
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
+  log-access: true
 keyphrases:
   - logger
 logo: null
