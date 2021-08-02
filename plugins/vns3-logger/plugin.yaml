@@ -1,9 +1,12 @@
 name: VNS3 Logger
-description: Integrate VNS3 with your logging platform of choice.
+description: >
+  Integrate VNS3 with your logging platform of choice. 
+  When running the plugin, please include the word "logger" in the name of the plugin. 
+  VNS3 will then mount VNS3 logs into the container.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/logger/
-image_url: https://vns3-containers-read-all.s3.amazonaws.com/VNS3_Base/VNS3_BASE_1804.tar.gz
+support: https://support.cohesive.net
+image_url: https://vns3-containers-read-all.s3.amazonaws.com/VNS3_Base/vns3_base_2004_20210414.tar.gz
 categories:
-  - monitoring
   - logging
 tags:
   baseOS: Ubuntu 20.04

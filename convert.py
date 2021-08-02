@@ -65,7 +65,7 @@ def load_plugin_yaml(plugin_directory, should_raise=False) -> Dict:
         return None
 
     plugin_dict = yaml.load(open(plugin_data_path, 'r').read(), Loader=yaml.Loader)
-    if 'logo' in plugin_dict:
+    if plugin_dict.get('logo'):
         plugin_dir_name = plugin_directory.split('/')[-1].rstrip('/')
         logo_url = "{base_url}/plugins/{plugin_dir}/{logo_file}".format(
             base_url=GITHUB_RAW_CONTENT_REPO_URL,
@@ -75,6 +75,8 @@ def load_plugin_yaml(plugin_directory, should_raise=False) -> Dict:
 
         plugin_dict['logo'] = logo_url
 
+    if plugin_dict.get('description'):
+        plugin_dict['description'] = plugin_dict['description'].strip()
 
     plugin_dict['id'] = plugin_dict['name'].lower().replace(' ', '-')
 
@@ -130,8 +132,12 @@ if __name__ == "__main__":
     log("Reading plugins from %s" % plugins_dir_path)
     plugin_directories = gather_plugin_directories(plugins_dir_path)
     log("Found %d plugin directories" % (len(plugin_directories)))
-    plugins_data = [
+    all_plugins_data = [
         load_plugin_yaml(plugin_dir, should_raise=True) for plugin_dir in plugin_directories
+    ]
+    plugins_data = [
+        plugin for plugin in all_plugins_data
+        if not plugin.get('draft') 
     ]
     output_file = parsed_args["output_file"]
     output_format = parsed_args["output_format"]

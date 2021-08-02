@@ -2,6 +2,7 @@ name: Datadog
 description: Collect information from a VNS3 controller host via SNMP and the VNS3
   API and report to datadog to improve network monitoring and health.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/datadog/
+support: https://support.cohesive.net
 image_url: https://vns3-containers-read-all.s3.amazonaws.com/DataDog/DataDog_v1-0.tar.gz
 categories:
   - logging
@@ -15,3 +16,4 @@ keyphrases:
   - status
 logo: images/datadog.png
 provider_code: 111111
+vns3_compatability: 5+

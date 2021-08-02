@@ -1,11 +1,15 @@
-name: VNS3 Packetloss
+name: Packetloss
 description: Collect, monitor and alert on packetloss statistics.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/packetloss/
+support: https://support.cohesive.net
 image_url: https://vns3-containers-read-all.s3.amazonaws.com/PacketLoss/PacketLoss_20191010.export.tar.gz
 categories:
   - monitoring
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
-version: X.Y.Z
+keyphrases:
+  - dropped packets
+version: "20191010"
 provider_code: 111111
+vns3_compatability: 5+
