@@ -4,7 +4,7 @@ documentation: https://docs.cohesive.net/docs/network-edge-plugins/bastillion/
 support: https://support.cohesive.net
 image_url: https://vns3-containers-read-all.s3.amazonaws.com/Bastillion/bastillion.tar.gz
 categories:
-  - monitoring
+  - administration
 tags:
   baseOS: Ubuntu 20.04
   ssh: false
