@@ -6,6 +6,7 @@ support: https://support.cohesive.net
 image_url: https://vns3-containers-read-all.s3.amazonaws.com/LetsEncrypt/LetsEncrypt-1.0-20190710.tar.gz
 categories:
   - security
+  - administration
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
