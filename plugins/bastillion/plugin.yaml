@@ -1,0 +1,19 @@
+name: Bastillion
+description: Provides a preinstalled copy of Bastillion, a web interface jump host to SSH sessions.
+documentation: https://docs.cohesive.net/docs/network-edge-plugins/bastillion/
+support: https://support.cohesive.net
+image_url: https://vns3-containers-read-all.s3.amazonaws.com/Bastillion/bastillion.tar.gz
+categories:
+  - administration
+tags:
+  baseOS: Ubuntu 20.04
+  ssh: false
+keyphrases:
+  - ssh
+  - jump
+  - remote
+  - terminal
+logo: images/Bastillion_icon.png
+provider_code: 111111
+version: "20210812"
+vns3_compatability: 5+
