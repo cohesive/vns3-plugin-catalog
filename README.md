@@ -71,8 +71,10 @@ keyphrases:
 logo: images/my-plugin-logo.png
 ```
 
+## Updating a Plugin
+Please create a branch called `update-plugin-[plugin name]` and create a Pull request to merge that branch into master.
 
-## Installing
-All plugins in master will be displayed in VNS3 on the install plugins page.
+## Installing plugin in VNS3
+All plugins in master will be displayed in VNS3 on the plugin catalog page.
 
 ![Install page picture](https://cohesive-networks.s3.amazonaws.com/plugins/plugin-catalog.png "VNS3 plugin install page")
