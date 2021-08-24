@@ -5,7 +5,7 @@ description: The CloudWatch Logging Container pulls live logs from a VNS3 contro
   components.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/cloudwatch-logs/
 support: https://support.cohesive.net
-image_url: https://vns3-containers-read-all.s3.amazonaws.com/CloudWatch_Logger/CloudWatch_Logger_20191022.tar.gz
+image_url: https://vns3-containers-read-all.s3.amazonaws.com/CloudWatch_Logger/CloudWatch_Logger_v2_20210824.tar.gz
 categories:
   - monitoring
   - logging
@@ -15,7 +15,8 @@ tags:
   log-access: true
 keyphrases:
   - aws
+  - cloudwatch
 logo: images/CWicon.png
-version: "20191022"
+version: "20210824"
 provider_code: 111111
 vns3_compatability: 5+
