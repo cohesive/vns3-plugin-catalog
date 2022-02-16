@@ -4,7 +4,7 @@ description: >
   throughput with Overlay Engines running on a VNS3 controller in a jumbo frame enabled cloud environment.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/overlay-engine/
 support: https://support.cohesive.net
-image_url: https://vns3-containers-read-all.s3.amazonaws.com/Overlayengine/overlayengine_20200510.tar.gz
+image_url: https://vns3-containers-read-all.s3.amazonaws.com/Overlayengine/overlayengine_v5_20210927.tar.gz
 categories:
   - performance
 tags:
