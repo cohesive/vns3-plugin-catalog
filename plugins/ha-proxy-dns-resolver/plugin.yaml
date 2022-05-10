@@ -1,6 +1,6 @@
 name: HAProxy DNS Resolver
 description: >
-  A free, vast and reliable layer 5 proxy and DNS resolver for 
+  A free, fast and reliable layer 5 proxy and DNS resolver for 
   load balancing and more network reactivity.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/ha-proxy/
 support: https://support.cohesive.net
