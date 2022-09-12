@@ -4,7 +4,7 @@ description: >
   well as a monitoring process for verifying connectivity for hosts in your network.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/pingproxy
 support: https://support.cohesive.net
-image_url: https://vns3-containers-read-all.s3.amazonaws.com/PingProxy/pingproxy2_beta_20210122.tar.gz
+image_url: https://vns3-containers-read-all.s3.amazonaws.com/PingMonitor/PingMonitor_v2_rc1.tar.gz
 categories:
   - monitoring
   - logging
