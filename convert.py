@@ -66,14 +66,16 @@ def load_plugin_yaml(plugin_directory, should_raise=False) -> Dict:
 
     plugin_dict = yaml.load(open(plugin_data_path, 'r').read(), Loader=yaml.Loader)
     if plugin_dict.get('logo'):
-        plugin_dir_name = plugin_directory.split('/')[-1].rstrip('/')
-        logo_url = "{base_url}/plugins/{plugin_dir}/{logo_file}".format(
-            base_url=GITHUB_RAW_CONTENT_REPO_URL,
-            plugin_dir=plugin_dir_name,
-            logo_file=plugin_dict['logo'].lstrip('/')
-        )
+        logo_path = plugin_dict['logo']
+        if not logo_path.startswith('http'):
+            plugin_dir_name = plugin_directory.split('/')[-1].rstrip('/')
+            logo_url = "{base_url}/plugins/{plugin_dir}/{logo_file}".format(
+                base_url=GITHUB_RAW_CONTENT_REPO_URL,
+                plugin_dir=plugin_dir_name,
+                logo_file=logo_path.lstrip('/')
+            )
 
-        plugin_dict['logo'] = logo_url
+            plugin_dict['logo'] = logo_url
 
     if plugin_dict.get('description'):
         plugin_dict['description'] = plugin_dict['description'].strip()
