@@ -15,3 +15,15 @@ provider_code: 111111
 logo: images/cohesive-logo-no-bg.png
 version: "20200510"
 vns3_compatability: 5+
+versions:
+  - version: "20210510"
+    image_url: https://vns3-containers-read-all.s3.amazonaws.com/Overlayengine/overlayengine_v5_20210927.tar.gz
+    vns3_compatability: 6+
+  - version: "20200510"
+    image_url: https://vns3-containers-read-all.s3.amazonaws.com/Overlayengine/overlayengine_v5_20210927.tar.gz
+    vns3_compatability: 4-5.2.x
+    documentation: https://yourdomain.com/docs/myplugin
+    support: https://yourdomain.com/docs/myplugin/support
+    tags:
+      baseOS: Ubuntu 20.04
+      ssh: true
