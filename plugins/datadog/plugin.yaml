@@ -15,5 +15,6 @@ keyphrases:
   - health
   - status
 logo: images/datadog.png
+version: 20220519
 provider_code: 111111
 vns3_compatability: 5+
