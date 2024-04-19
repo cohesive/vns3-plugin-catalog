@@ -4,7 +4,7 @@ description: >
   used networking tools such as tcpdump, tshark, net-tools and more.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/base-container/
 support: https://support.cohesive.net
-image_url: https://vns3-containers-read-all.s3.amazonaws.com/VNS3_Base/vns3_base_2004_20210414.tar.gz
+image_url: https://vns3-containers-read-all.s3.amazonaws.com/VNS3_Base/vns3_base_2004_6_20240403.tar.gz
 categories:
   - monitoring
   - logging
@@ -18,6 +18,6 @@ keyphrases:
   - iftop
   - nettools
 logo: images/Linux_Containers_logo.png
-version: "20210414"
+version: "20240403"
 provider_code: 111111
 vns3_compatability: 5+
