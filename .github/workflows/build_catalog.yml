@@ -1,0 +1,39 @@
+name: Build Catalog JSON File
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+
+    build:
+
+        runs-on: ubuntu-latest
+        
+        steps:
+        - uses: actions/checkout@v2
+
+        - name: Install dependencies  
+          run: |
+           apt install python3-pip -y
+           apt install python3-virtualenv -y
+        
+        - name: Generate Catalg JSON File
+          run: |
+              ./run_convert.sh
+        
+        - name: Configure AWS credentials
+          uses: aws-actions/configure-aws-credentials@v4
+          with:
+            aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            aws-region: us-east-1
+     
+        - name: Copy image to S3
+          run: |
+            aws s3 cp catalog.json "s3://${{ secrets.AWS_S3_BUCKET }}/catalog.json"
+
+        - name: Allow public read access to S3 bucket
+          run: |
+            aws s3api put-object-acl --bucket ${{ secrets.AWS_S3_BUCKET }} --key catalog.json --acl public-read
