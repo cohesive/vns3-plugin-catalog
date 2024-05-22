@@ -1,0 +1,71 @@
+name: Build Catalog JSON File
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+
+    build:
+
+        runs-on: ubuntu-latest
+        
+        steps:
+        - uses: actions/checkout@v2
+
+        - name: Install dependencies  
+          run: |
+           sudo apt install python3-pip python3-virtualenv -y
+        
+        - name: Generate Catalg JSON File
+          run: |
+            sudo chmod +x convert.py run-convert.sh
+            sudo ./run-convert.sh
+        
+        - name: Configure AWS credentials
+          uses: aws-actions/configure-aws-credentials@v4
+          with:
+            aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            aws-region: us-east-1
+
+        - name: Take backup of current catalog.json
+          run: |
+            date=$(date +%Y%m%d)
+            aws s3 cp "s3://${{ secrets.AWS_S3_BUCKET }}/catalog.json" "s3://${{ secrets.AWS_S3_BUCKET }}/catalog-${date}.json.bk"
+     
+        - name: Copy new catalog.json to S3
+          run: |
+            aws s3 cp catalog.json "s3://${{ secrets.AWS_S3_BUCKET }}/catalog.json"
+        
+        - name: Generate 1 week pre-signed URL
+          id: presign
+          run: |
+            PRESIGN_URL=$(aws s3 presign "s3://${{ secrets.AWS_S3_BUCKET }}/catalog.json" --expires-in 604800)
+            echo "::set-output name=PRESIGN_URL::$PRESIGN_URL"
+                
+        - name: Post pre-signed URL to Slack
+          id: slack
+          uses: slackapi/slack-github-action@v1.26.0
+          with:
+            payload: |
+                {
+                    "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                            "type": "mrkdwn",
+                            "text": "Lastest VNS3 Plugin Catalog created.  Review the latest version: ${{ steps.presign.outputs.PRESIGN_URL }}"
+                            }
+                        }
+                    ]
+                }
+          env:
+            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+            SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+
+        - name: Allow public read access to file in S3 bucket
+          run: |
+             aws s3api put-object-acl --bucket ${{ secrets.AWS_S3_BUCKET }} --key catalog.json --acl public-read
