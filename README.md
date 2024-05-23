@@ -130,3 +130,26 @@ Please create a branch called `update-plugin-[plugin name]` and create a Pull re
 All plugins in master will be displayed in VNS3 on the plugin catalog page.
 
 ![Install page picture](https://cohesive-networks.s3.amazonaws.com/plugins/plugin-catalog.png "VNS3 plugin install page")
+
+
+## Updating the Catalog
+
+VNS3 controllers display the catalog in one of two ways:
+
+1. Public catalog.json file (default) - controllers with public Internet access are able to download the public **[catalog.json file](https://cohesive-networks.s3.amazonaws.com/plugins/catalog.json)** to use to populate the catalog page.
+2. Private Accesss - controllers without public Internet access or for environments where admins want to control what plugins are available,  VNS3 can be configured to point to a different catalog.json file that has specific plugins and plugin image URLs that are accessible.
+
+In order to update the public catalog.json file, the following actions need to be taken:
+
+1. Create/update the Plugin Repo.
+2. Build and upload a new Plugin image to the **[staging bucket](https://cohesive-networks-staging.s3.amazonaws.com)** via the plugin image creation github action (create tag/release).
+3. Test Plugin Image.
+4. Contact RCK or PJK to get the image moved to the public plugin bucket and get the download URL.
+5. Test the plugin image download URL.
+6. Update the **[vns3-plugin-catalog](https://github.com/cohesive/vns3-plugin-catalog)** plugin directory with the new plugin image information and commit the changes.
+7. Create a pull request against `master` branch and request approval and merge.
+8. Merge action creates a catalog.json file in the **[staging bucket](https://cohesive-networks-staging.s3.amazonaws.com)** and prints a pre-signed URL for download, review, testing in Slack #product-mgmt-bots.
+9. Test the catalog.json file in a VNS3 controller by:
+	-  updating line 266 of `/opt/vpncubed/webadmin/app/api/v1_5/plugin.rb` 
+	- running `/opt/vpncubed/bin/webadmin restart`
+10. Request RCK or PJK tag and release this repo to trigger the github action that updates the public catalog.json file in the **[public bucket](https://cohesive-networks.s3.amazonaws.com/plugins/)**.
