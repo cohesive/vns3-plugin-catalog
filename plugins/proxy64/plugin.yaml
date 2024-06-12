@@ -11,6 +11,6 @@ tags:
   baseOS: Ubuntu 20.04
   ssh: false
   log-access: true
-version: "20240609"
+version: "0.9.0"
 provider_code: 111111
 vns3_compatability: 6+
