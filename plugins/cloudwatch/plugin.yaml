@@ -21,3 +21,7 @@ keyphrases:
   - aws
   - cloudwatch
 provider_code: 111111
+tags:
+  baseOS: Ubuntu 20.04
+  ssh: true
+  log-access: true

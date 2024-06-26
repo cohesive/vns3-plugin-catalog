@@ -20,3 +20,6 @@ keyphrases:
   - dns
   - proxy
 provider_code: 111111
+tags:
+  baseOS: Ubuntu 18.04
+  ssh: true

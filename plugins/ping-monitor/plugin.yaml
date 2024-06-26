@@ -16,3 +16,6 @@ categories:
   - monitoring
   - logging
 provider_code: 111111
+tags:
+  baseOS: Ubuntu 20.04
+  ssh: true
