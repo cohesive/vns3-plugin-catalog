@@ -8,17 +8,13 @@ versions:
     image_url: https://cohesive-networks.s3.amazonaws.com/plugins/vns3-container-hacontainer-20240625-3.0.0.tar.gz
     vns3_compatibility: 5+
     tags:
-      ui: false
       baseOS: Ubuntu 20.04
-      ssh: false
       log-access: true
   - version: 2.2.2
     image_url: https://cohesive-networks-plugins.s3.amazonaws.com/plugins/vns3-high-availability/vns3-high-availability.v2.2.2.tgz
     vns3_compatibility: 4+
     tags:
-      ui: false
       baseOS: Ubuntu 20.04
-      ssh: false
       log-access: false
 categories:
   - performance
@@ -27,7 +23,5 @@ keyphrases:
   - HA
 provider_code: 111111
 tags:
-  ui: false
   baseOS: Ubuntu 20.04
-  ssh: false
   log-access: true
