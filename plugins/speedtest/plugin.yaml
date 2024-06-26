@@ -3,15 +3,16 @@ description: Test network performance from your browser with this speed test plu
   A browser app provides download and upload information for your VNS3 network.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/speedtest/
 support: https://support.cohesive.net
-image_url: https://vns3-containers-read-all.s3.amazonaws.com/speedtest/SpeedTest.20190330.tar.gz
+logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_speedtest-plugin_icon.png
+versions:
+  - version: 20190330
+    image_url: https://cohesive-networks.s3.amazonaws.com/plugins/SpeedTest.20190330.tar.gz
+    vns3_compatibility: 5+
+    tags:
+      baseOS: Ubuntu 20.04
+      ssh: true
+      ui: true
 categories:
   - performance
   - monitoring
-tags:
-  baseOS: Ubuntu 20.04
-  ssh: true
-  UI: true
-version: "20190330"
-logo: images/speedtest-logo.png
 provider_code: 111111
-vns3_compatability: 5+

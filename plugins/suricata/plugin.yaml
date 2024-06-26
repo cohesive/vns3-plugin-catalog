@@ -6,18 +6,22 @@ description: >
   stop, and assess the most sophisticated attacks.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/nids/
 support: https://support.cohesive.net
-image_url: https://vns3-containers-read-all.s3.amazonaws.com/NIDS_suricata_Base/suricata-nids-base-20210625.tgz
+logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_suricata-plugin_icon.png
+versions:
+  - version: 20210625
+    image_url: https://cohesive-networks.s3.amazonaws.com/plugins/suricata-nids-base-20210625.tgz
+    vns3_compatibility: 5+
+    tags:
+      baseOS: Ubuntu 20.04
+      ssh: true
+      log-access: true
+      suricata: 6.0.2
 categories:
   - monitoring
   - security
-tags:
-  baseOS: Ubuntu 20.04
-  ssh: true
-  suricata: 6.0.2
 keyphrases:
   - threat detection
   - intrusion prevention
-version: "20210625"
-logo: images/suricata-logo.png
+  - nids
+  - ids
 provider_code: 111111
-vns3_compatability: 5+

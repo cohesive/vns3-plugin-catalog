@@ -4,18 +4,19 @@ description: >
   load balancing and more network reactivity.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/ha-proxy/
 support: https://support.cohesive.net
-image_url: https://vns3-containers-read-all.s3.amazonaws.com/HAproxy_Resolver/HAproxy_22_Resolver_Manual_base_1820201202.tar.gz
+logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_haproxy-plugin_icon.png
+versions:
+  - version: 20201202
+    image_url: https://cohesive-networks.s3.amazonaws.com/plugins/HAproxy_22_Resolver_Manual_base_1820201202.tar.gz
+    vns3_compatibility: 5+
+    tags:
+      baseOS: Ubuntu 18.04
+      ssh: true
 categories:
   - proxy
   - networking
-tags:
-  baseOS: Ubuntu 18.04
-  ssh: true
-logo: images/haproxy.png
 keyphrases:
   - load balancer
   - dns
   - proxy
-version: "20201202"
 provider_code: 111111
-vns3_compatability: 5+

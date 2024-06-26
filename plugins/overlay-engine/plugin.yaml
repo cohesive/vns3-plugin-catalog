@@ -4,15 +4,15 @@ description: >
   throughput with Overlay Engines running on a VNS3 controller in a jumbo frame enabled cloud environment.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/overlay-engine/
 support: https://support.cohesive.net
-image_url: https://vns3-containers-read-all.s3.amazonaws.com/Overlayengine/overlayengine_v5_20210927.tar.gz
+logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_overlay-engine-plugin_icon.png
+versions:
+  - version: 20210927
+    image_url: https://cohesive-networks.s3.amazonaws.com/plugins/overlayengine_v5_20210927.tar.gz
+    vns3_compatibility: 5+
+    tags:
+      baseOS: Ubuntu 20.04
+      ssh: true
+      overlay-access: true
 categories:
   - performance
-tags:
-  baseOS: Ubuntu 20.04
-  ssh: true
-  overlay-access: true
 provider_code: 111111
-logo: images/cohesive-logo-no-bg.png
-version: "20210927"
-vns3_compatability: 5+
-draft: true

@@ -4,14 +4,15 @@ description: >
   well as a monitoring process for verifying connectivity for hosts in your network.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/pingproxy
 support: https://support.cohesive.net
-image_url: https://vns3-containers-read-all.s3.amazonaws.com/PingMonitor/PingMonitor_v2_rc1.tar.gz
+logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_pingproxy-plugin_icon.png
+versions:
+  - version: 20210122
+    image_url: https://cohesive-networks.s3.amazonaws.com/plugins/PingMonitor_v2_rc1.tar.gz
+    vns3_compatibility: -4.5,5+
+    tags:
+      baseOS: Ubuntu 20.04
+      ssh: true
 categories:
   - monitoring
   - logging
-tags:
-  baseOS: Ubuntu 20.04
-  ssh: true
-version: "20210122"
-logo: images/pingproxy_icon.png
 provider_code: 111111
-vns3_compatability: -4.5,5+
