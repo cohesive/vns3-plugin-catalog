@@ -22,3 +22,6 @@ keyphrases:
   - iftop
   - nettools
 provider_code: 111111
+tags:
+  baseOS: Ubuntu 20.04
+  ssh: true

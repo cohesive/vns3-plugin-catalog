@@ -21,3 +21,7 @@ keyphrases:
   - web application firewall
   - load balancer
 provider_code: 111111
+tags:
+  baseOS: Ubuntu 18.04
+  ssh: true
+  nginx: 3.0
