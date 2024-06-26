@@ -1,16 +1,16 @@
 name: VNS3 High Availability
-description: Automate a highly available routing configuration for your VNS3 mesh
-  network.
+description: Automate a highly available routing configuration for your VNS3 controllers.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/vns3-ha-plugin/
 support: https://support.cohesive.net
-image_url: https://cohesive-networks-plugins.s3.amazonaws.com/plugins/vns3-high-availability/vns3-high-availability.v2.2.2.tgz
+image_url: https://cohesive-networks.s3.amazonaws.com/plugins/vns3-container-hacontainer-20240625-3.0.0.tar.gz
 categories:
   - performance
+  - networking
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
 keyphrases:
   - HA
-version: "2.2.2"
+version: "3.0.0"
 provider_code: 111111
 vns3_compatability: 5+
