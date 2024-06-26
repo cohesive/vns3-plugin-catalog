@@ -2,6 +2,7 @@ name: Bind9 DNS
 description: A full featured DNS system for all of your DNS requirements
 documentation: null
 support: https://support.cohesive.net
+logo: null
 image_url: null
 categories:
   - networking
@@ -12,7 +13,6 @@ keyphrases:
   - DNS
   - Relay
   - Resolution
-logo: null
 provider_code: 111111
 vns3_compatability: 5+
 version: null

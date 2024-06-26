@@ -3,18 +3,19 @@ description: Collect information from a VNS3 controller host via SNMP and the VN
   API and report to datadog to improve network monitoring and health.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/datadog/
 support: https://support.cohesive.net
-image_url: https://vns3-containers-read-all.s3.amazonaws.com/DataDog/DataDog_v1-0.tar.gz
+logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_datadog-plugin_icon.png
+versions:
+  - version: 1.0.0
+    image_url: https://cohesive-networks.s3.amazonaws.com/plugins/DataDog_v1-0.tar.gz
+    vns3_compatibility: 5+
+    tags:
+      baseOS: Ubuntu 20.04
+      ssh: true
+      log-access: true
 categories:
   - logging
   - monitoring
-tags:
-  baseOS: Ubuntu 20.04
-  ssh: true
-  log-access: true
 keyphrases:
   - health
   - status
-logo: images/datadog.png
-version: "20220519"
 provider_code: 111111
-vns3_compatability: 5+
