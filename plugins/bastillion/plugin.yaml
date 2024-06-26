@@ -9,7 +9,6 @@ versions:
     vns3_compatibility: 5+
     tags:
       baseOS: Ubuntu 20.04
-      ssh: false
 categories:
   - administration
 keyphrases:
@@ -20,4 +19,3 @@ keyphrases:
 provider_code: 111111
 tags:
   baseOS: Ubuntu 20.04
-  ssh: false
