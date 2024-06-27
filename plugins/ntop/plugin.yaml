@@ -3,16 +3,16 @@ description: The Ntop Container runs nprobe and ntopng, with nprobe acting as a
   collector for netflows and ntopng providing visualization of flow data.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/ntop/
 support: https://support.cohesive.net
-logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_ntop-plugin_icon.png
-version: 20191216
 image_url: https://cohesive-networks.s3.amazonaws.com/plugins/ntop.tar.gz
-vns3_compatibility: 5+
 categories:
   - monitoring
-keyphrases:
-  - netflow
-  - nprobe
-provider_code: 111111
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
+keyphrases:
+  - netflow
+  - nprobe
+version: 20191216
+logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_ntop-plugin_icon.png
+provider_code: 111111
+vns3_compatibility: 5+

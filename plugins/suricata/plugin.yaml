@@ -1,26 +1,22 @@
 name: Suricata NIDs
-description: >
-  Suricata is the leading independent open source threat detection engine. 
-  By combining intrusion detection (IDS), intrusion prevention (IPS), network 
-  security monitoring (NSM) and PCAP processing, Suricata can quickly identify, 
-  stop, and assess the most sophisticated attacks.
+description: Suricata is the leading independent open source threat detection engine.  By combining intrusion detection (IDS), intrusion prevention (IPS), network security monitoring (NSM) and PCAP processing, Suricata can quickly identify, stop, and assess the most sophisticated attacks.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/nids/
 support: https://support.cohesive.net
-logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_suricata-plugin_icon.png
-version: 20210625
 image_url: https://cohesive-networks.s3.amazonaws.com/plugins/suricata-nids-base-20210625.tgz
-vns3_compatibility: 5+
 categories:
   - monitoring
   - security
-keyphrases:
-  - threat detection
-  - intrusion prevention
-  - nids
-  - ids
-provider_code: 111111
 tags:
   baseOS: Ubuntu 20.04
   ssh: true
   log-access: true
   suricata: 6.0.2
+keyphrases:
+  - threat detection
+  - intrusion prevention
+  - nids
+  - ids
+version: 20210625
+logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_suricata-plugin_icon.png
+provider_code: 111111
+vns3_compatibility: 5+
