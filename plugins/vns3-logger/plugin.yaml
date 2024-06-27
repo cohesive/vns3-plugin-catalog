@@ -9,7 +9,7 @@ keyphrases:
   - Logging
   - Aggregation
   - Analysis
-version: 20240403
+version: "20240403"
 logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_generic-plugin_icon.png
 provider_code: 111111
 vns3_compatibility: 5+

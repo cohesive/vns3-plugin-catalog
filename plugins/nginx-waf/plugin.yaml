@@ -16,7 +16,7 @@ keyphrases:
   - waf
   - web application firewall
   - load balancer
-version: 20210421
+version: "20210421"
 logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_nginx-plugin_icon.png
 provider_code: 111111
 vns3_compatibility: 5+

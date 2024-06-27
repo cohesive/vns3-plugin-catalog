@@ -12,7 +12,7 @@ keyphrases:
   - jump
   - remote
   - terminal
-version: 20210812
+version: "20210812"
 logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_bastillion-plugin_icon.png
 provider_code: 111111
 vns3_compatibility: 5+

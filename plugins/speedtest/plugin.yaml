@@ -10,7 +10,7 @@ tags:
   baseOS: Ubuntu 20.04
   ssh: true
   ui: true
-version: 20190330
+version: "20190330"
 logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_speedtest-plugin_icon.png
 provider_code: 111111
 vns3_compatibility: 5+
