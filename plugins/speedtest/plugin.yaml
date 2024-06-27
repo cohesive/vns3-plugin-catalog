@@ -4,14 +4,9 @@ description: Test network performance from your browser with this speed test plu
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/speedtest/
 support: https://support.cohesive.net
 logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_speedtest-plugin_icon.png
-versions:
-  - version: 20190330
-    image_url: https://cohesive-networks.s3.amazonaws.com/plugins/SpeedTest.20190330.tar.gz
-    vns3_compatibility: 5+
-    tags:
-      baseOS: Ubuntu 20.04
-      ssh: true
-      ui: true
+version: 20190330
+image_url: https://cohesive-networks.s3.amazonaws.com/plugins/SpeedTest.20190330.tar.gz
+vns3_compatibility: 5+
 categories:
   - performance
   - monitoring
