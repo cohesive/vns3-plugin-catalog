@@ -1,17 +1,15 @@
 name: VNS3 Logger
-description: >
-  Integrate VNS3 with your logging platform of choice. 
-  VNS3 mounts its internal log directory into the container.
+description: Integrate VNS3 with your logging platform of choice.  VNS3 mounts its internal log directory into the container.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/logger/
 support: https://support.cohesive.net
-logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_generic-plugin_icon.png
-version: 20240403
 image_url: https://cohesive-networks.s3.amazonaws.com/plugins/vns3_base_2004_6_20240403.tar.gz
-vns3_compatibility: 5+
 categories:
   - logging
 keyphrases:
   - Logging
   - Aggregation
   - Analysis
+version: 20240403
+logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_generic-plugin_icon.png
 provider_code: 111111
+vns3_compatibility: 5+

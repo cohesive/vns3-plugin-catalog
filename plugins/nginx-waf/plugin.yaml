@@ -4,19 +4,21 @@ description: >
   can be used to stop a broad range of Layer 7 attacks and respond to emerging threats with virtual patching.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/waf/
 support: https://support.cohesive.net
-logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_nginx-plugin_icon.png
-version: 20210421
 image_url: https://cohesive-networks.s3.amazonaws.com/plugins/WAF_modsecurity_nginx_3.0.export.tar.gz
-vns3_compatibility: 5+
 categories:
   - proxy
   - networking
-keyphrases:
-  - waf
-  - web application firewall
-  - load balancer
-provider_code: 111111
 tags:
   baseOS: Ubuntu 18.04
   ssh: true
   nginx: 3.0
+keyphrases:
+  - waf
+  - web application firewall
+  - load balancer
+version: 20210421
+logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_nginx-plugin_icon.png
+provider_code: 111111
+vns3_compatibility: 5+
+
+
