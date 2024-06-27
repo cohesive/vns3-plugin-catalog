@@ -3,12 +3,9 @@ description: Provides a preinstalled copy of Bastillion, a web interface jump ho
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/bastillion/
 support: https://support.cohesive.net
 logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_bastillion-plugin_icon.png
-versions:
-  - version: 20210812
-    image_url: https://cohesive-networks.s3.amazonaws.com/plugins/bastillion.tar.gz
-    vns3_compatibility: 5+
-    tags:
-      baseOS: Ubuntu 20.04
+version: 20210812
+image_url: https://cohesive-networks.s3.amazonaws.com/plugins/bastillion.tar.gz
+vns3_compatibility: 5+
 categories:
   - administration
 keyphrases:
