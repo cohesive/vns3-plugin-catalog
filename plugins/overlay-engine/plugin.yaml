@@ -9,7 +9,7 @@ tags:
   baseOS: Ubuntu 20.04
   ssh: true
   overlay-access: true
-version: 20210927
+version: "20210927"
 logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_overlay-engine-plugin_icon.png
 provider_code: 111111
 vns3_compatibility: 5+

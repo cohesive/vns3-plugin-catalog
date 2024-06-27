@@ -13,7 +13,7 @@ keyphrases:
   - load balancer
   - dns
   - proxy
-version: 20201202
+version: "20201202"
 logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_haproxy-plugin_icon.png
 provider_code: 111111
 vns3_compatibility: 5+
