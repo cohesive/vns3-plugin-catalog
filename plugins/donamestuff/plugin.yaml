@@ -1,0 +1,18 @@
+name: Do Name Stuff  DNS
+description: A full featured DNS system based on CoreDNS utilaizing tags.
+documentation: https://docs.cohesive.net/docs/network-edge-plugins/donamestuff/
+support: https://support.cohesive.net
+image_url: https://cohesive-networks.s3.amazonaws.com/plugins/vns3-container-do-name-stuff-20240625-1.0.1.tar.gz
+categories:
+  - networking
+tags:
+  baseOS: Ubuntu 20.04
+  ssh: false
+keyphrases:
+  - DNS
+  - Relay
+  - Resolution
+version: "1.0.1"
+logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_dns-plugin_icon.png
+provider_code: 111111
+vns3_compatability: 5+
