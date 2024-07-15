@@ -1,0 +1,18 @@
+name: Proxy64
+description: Access the IPv4 Internet from your IPv6 subnets when running a dual stack VNS3 at your cloud network edge.
+documentation: https://docs.cohesive.net/docs/network-edge-plugins/proxy64/
+support: https://support.cohesive.net
+image_url: https://cohesive-networks.s3.amazonaws.com/plugins/vns3-container-proxy64-20240624-v1.0.tar.gz
+categories:
+  - networking
+  - proxy
+tags:
+  baseOS: Ubuntu 20.04
+  ssh: false
+  log-access: true
+version: "1.0.0"
+logo: https://cohesive-networks.s3.amazonaws.com/plugins/icons/cohesive-networks_proxy64-plugin_icon.png
+provider_code: 111111
+vns3_compatability: 6+
+
+
