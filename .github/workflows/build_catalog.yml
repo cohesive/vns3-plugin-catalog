@@ -33,16 +33,16 @@ jobs:
         - name: Take backup of current catalog.json
           run: |
             date=$(date +%Y%m%d)
-            aws s3 cp "s3://${{ secrets.AWS_S3_BUCKET }}/catalog.json" "s3://${{ secrets.AWS_S3_BUCKET }}/catalog-${date}.json.bk"
+            aws s3 cp "s3://${{ secrets.STAGE_AWS_S3_BUCKET }}/catalog.json" "s3://${{ secrets.STAGE_AWS_S3_BUCKET }}/catalog-${date}.json.bk"
      
         - name: Copy new catalog.json to S3
           run: |
-            aws s3 cp catalog.json "s3://${{ secrets.AWS_S3_BUCKET }}/catalog.json"
+            aws s3 cp catalog.json "s3://${{ secrets.STAGE_AWS_S3_BUCKET }}/catalog.json"
         
         - name: Generate 1 week pre-signed URL
           id: presign
           run: |
-            PRESIGN_URL=$(aws s3 presign "s3://${{ secrets.AWS_S3_BUCKET }}/catalog.json" --expires-in 604800)
+            PRESIGN_URL=$(aws s3 presign "s3://${{ secrets.STAGE_AWS_S3_BUCKET }}/catalog.json" --expires-in 604800)
             echo "::set-output name=PRESIGN_URL::$PRESIGN_URL"
                 
         - name: Post pre-signed URL to Slack
