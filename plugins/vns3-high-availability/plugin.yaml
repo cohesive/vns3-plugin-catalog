@@ -1,6 +1,6 @@
 name: VNS3 High Availability
 description: Automatically failover cloud routes between VNS3 Controllers configurd in a high availability deployment.
-documentation: https://docs.cohesive.net/docs/network-edge-plugins/vns3-ha-plugin/
+documentation: https://docs.cohesive.net/docs/network-edge-plugins/ha-plugin/
 support: https://support.cohesive.net
 image_url: https://cohesive-networks.s3.amazonaws.com/plugins/vns3-container-hacontainer-20240710-3.0.1.tar.gz
 categories:
