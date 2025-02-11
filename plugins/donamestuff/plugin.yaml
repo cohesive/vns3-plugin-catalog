@@ -2,7 +2,7 @@ name: Do Name Stuff  DNS
 description: A full featured DNS system based on CoreDNS utilaizing tags.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/donamestuff/
 support: https://support.cohesive.net
-image_url: https://cohesive-networks.s3.amazonaws.com/plugins/vns3-container-do-name-stuff-20240813-v1.0.4.tar.gz
+image_url: https://cohesive-networks.s3.amazonaws.com/plugins/vns3-container-do-name-stuff-20250211-v1.0.4.tar.gz
 categories:
   - networking
 tags:
