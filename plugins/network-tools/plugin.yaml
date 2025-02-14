@@ -14,7 +14,7 @@ keyphrases:
   - tcpdump
   - iftop
   - nettools
-version: "20240403"
+version: "1.1.0"
 logo: https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/icons/cohesive-networks_network-tools.png
 provider_code: 111111
 vns3_compatibility: 5+
