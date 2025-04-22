@@ -2,7 +2,7 @@ name: Telegraf
 description: The Telegraf Plugin for VNS3 is a powerful, lightweight monitoring agent designed to collect and send system, network, and VPN tunnel metrics from a VNS3 controller to various monitoring destinations. 
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/telegraf/
 support: https://support.cohesive.net
-image_url: https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/vns3-plugin-telegraf-20250421-v1.0.1.tar.gz
+image_url: https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/vns3-plugin-telegraf-20250422-v1.0.2.tar.gz
 command: "/entrypoint.sh"
 categories:
   - monitoring
@@ -17,7 +17,7 @@ keyphrases:
   - cloudwatch
   - influxdb
   - observability
-version: "1.0.1"
+version: "1.0.2"
 logo: https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/icons/cohesive-networks_telegraf.png
 provider_code: 111111
 vns3_compatibility: 5+
