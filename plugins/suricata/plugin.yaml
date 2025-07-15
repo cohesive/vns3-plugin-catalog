@@ -8,7 +8,7 @@ categories:
   - monitoring
   - security
 tags:
-  baseOS: Ubuntu 22.04
+  baseOS: Ubuntu 24.04
   ssh: true
   log-access: true
   suricata: 7.0.10
