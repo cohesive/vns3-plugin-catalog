@@ -1,8 +1,8 @@
 name: Network Tools
-description: The image that Cohesive uses as the base image for its plugins. It contains commonly used networking tools such as tcpdump, tshark, net-tools and more.
+description: Contains commonly used networking tools such as tcpdump, tshark, net-tools and more.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/network-tools/
 support: https://support.cohesive.net
-image_url: https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/vns3-plugin-network-tools-20251022-v2.1.0-24.04.tar
+image_url: https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/vns3-plugin-network-tools-20251022-v2.1.0-24.04.tar.gz
 command: "/opt/cohesive/container_startup.sh"
 categories:
   - monitoring
