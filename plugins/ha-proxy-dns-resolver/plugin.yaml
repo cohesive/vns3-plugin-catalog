@@ -1,8 +1,9 @@
 name: HAProxy Load Balancer
-description: Layer 4/ TCP and HTTP proxy and load balancer with runtime DNS re-resolution for cloud targets with floating IPs.  Health checks, TLS termination, stats UI.  Plugin Manager support.
+description: Layer 4 TCP and HTTP proxy and load balancer with runtime DNS re-resolution for cloud targets with floating IPs.  Health checks, TLS termination, stats UI.  Plugin Manager support.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/ha-proxy/
 support: https://support.cohesive.net
 image_url: https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/vns3-plugin-haproxy-20260616-v1.2.0.tar.gz
+command: "/opt/cohesive/container_startup.sh"
 categories:
   - proxy
   - networking
