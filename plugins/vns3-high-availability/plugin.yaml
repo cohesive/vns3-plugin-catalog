@@ -3,6 +3,7 @@ description: Automatically failover cloud routes between VNS3 Controllers config
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/ha-plugin/
 support: https://support.cohesive.net
 image_url: https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/vns3-plugin-hacontainer-20260708-v4.1.3.tar.gz
+command: "/opt/cohesive/container_startup.sh"
 categories:
   - performance
   - networking
