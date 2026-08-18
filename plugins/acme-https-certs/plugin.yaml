@@ -1,5 +1,5 @@
-name: HTTPS Certs Manager
-description: Easily generate and renew SSL certificates for your VNS3 controller using the ACME protocol.
+name: Cohesive Networks HTTPS Certs Manager
+description: Cohesive Networks HTTPS Certificate Manager plugin automatically requests, renews, and installs HTTPS certificates on the VNS3 controller to keep its WebUI and API securely reachable.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/https-certs/
 support: https://support.cohesive.net
 image_url: https://cohesive-networks.s3.amazonaws.com/plugins/vns3-plugin-httpscertmanager-20250123-3.1.tar.gz
@@ -8,12 +8,19 @@ categories:
   - security
   - administration
 tags:
-  baseOS: Ubuntu 20.04
+  baseOS: Ubuntu 24.04
   ssh: true
 keyphrases:
   - SSL
   - https
-version: "3.1.0"
+version: "3.2.0"
+versions:
+  - version: "3.2.0"
+    image: "https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/vns3-plugin-httpscertmanager-AMD64-20260818-v3.2.0.tar.gz"
+    arch: "amd64"
+  - version: "3.2.0"
+    image: "https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/vns3-plugin-httpscertmanager-ARM64-20260818-v3.2.0.tar.gz"
+    arch: "arm64"
 logo: https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/icons/cohesive-networks-https-certs-manager.png
 provider_code: 111111
 vns3_compatibility: 5+
