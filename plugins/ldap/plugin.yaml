@@ -1,0 +1,29 @@
+name: Cohesive Networks LDAP 
+description: Cohesive Networks LDAP provides a built-in Open LDAP directory with LDAP Account Manager for administration. 
+documentation: https://docs.cohesive.net/docs/ldap-plugin/ldap/
+support: https://support.cohesive.net
+image_url: https://cohesive-networks.s3.us-east-1.amazonaws.com/extras/ldap-docker-plugin-AMD64-20260827-v1.0.0.tar
+command: "/opt/cohesive/container_startup.sh"
+categories:
+  - user management 
+  - administration
+tags:
+  baseOS: Ubuntu 24.04
+  ssh: true
+  log-access: false
+keyphrases:
+  - "SSL"
+  - "https"
+version: "1.0.0"
+versions:
+  - version: "1.0.0"
+    image: "https://cohesive-networks.s3.us-east-1.amazonaws.com/extras/ldap-docker-plugin-AMD64-20260827-v1.0.0.tar"
+    catalog_id: "ldap_1.0.0"
+    arch: "amd64"
+  - version: "1.0.0"
+    image: "https://cohesive-networks.s3.us-east-1.amazonaws.com/extras/ldap-docker-plugin-ARM64-20260827-v1.0.0.tar"
+    catalog_id: "ldap_1.0.0"
+    arch: "arm64"
+logo: https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/icons/cohesive_networks_ldap_plugin_icon.png
+provider_code: 111111
+vns3_compatibility: 7+
