@@ -17,11 +17,11 @@ keyphrases:
 version: "1.0.0"
 versions:
   - version: "1.0.0"
-    image: "https://cohesive-networks.s3.us-east-1.amazonaws.com/extras/ldap-docker-plugin-AMD64-20260827-v1.0.0.tar"
+    image: "https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/ldap-docker-plugin-AMD64-20260827-v1.0.0.tar"
     catalog_id: "ldap_1.0.0"
     arch: "amd64"
   - version: "1.0.0"
-    image: "https://cohesive-networks.s3.us-east-1.amazonaws.com/extras/ldap-docker-plugin-ARM64-20260827-v1.0.0.tar"
+    image: "https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/ldap-docker-plugin-ARM64-20260827-v1.0.0.tar"
     catalog_id: "ldap_1.0.0"
     arch: "arm64"
 logo: https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/icons/cohesive_networks_ldap_plugin_icon.png
