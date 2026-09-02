@@ -1,6 +1,6 @@
 name: Cohesive Networks LDAP 
 description: Cohesive Networks LDAP provides a built-in Open LDAP directory with LDAP Account Manager for administration. 
-documentation: https://docs.cohesive.net/docs/ldap-plugin/ldap/
+documentation: https://docs.cohesive.net/docs/network-edge-plugins/ldap/
 support: https://support.cohesive.net
 image_url: https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/ldap-docker-plugin-AMD64-20260827-v1.0.0.tar
 command: "/opt/cohesive/container_startup.sh"
