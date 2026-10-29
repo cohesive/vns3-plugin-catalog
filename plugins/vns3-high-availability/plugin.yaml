@@ -2,7 +2,7 @@ name: Cohesive Networks High Availability
 description: Cohesive Networks High Availability plugin monitors controller health and automatically updates cloud route tables to ensure continuous network traffic during a failover.
 documentation: https://docs.cohesive.net/docs/network-edge-plugins/ha-plugin/
 support: https://support.cohesive.net
-image_url: https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/vns3-plugin-hacontainer-AMD64-20261002-v4.2.1.tar.gz
+image_url: https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/vns3-plugin-hacontainer-AMD64-20261028-v4.3.0.tar.gz
 command: "/opt/cohesive/container_startup.sh"
 categories:
   - performance
@@ -14,8 +14,14 @@ keyphrases:
   - ha
   - high availability
   - failover
-version: "4.2.1"
+version: "4.3.0"
 versions:
+  - version: "4.3.0"
+    image: "https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/vns3-plugin-hacontainer-AMD64-20261028-v4.3.0.tar.gz"
+    arch: "amd64"
+  - version: "4.3.0"
+    image: "https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/vns3-plugin-hacontainer-ARM64-20261028-v4.3.0.tar.gz"
+    arch: "arm64"
   - version: "4.2.1"
     image: "https://cohesive-networks.s3.us-east-1.amazonaws.com/plugins/vns3-plugin-hacontainer-AMD64-20261002-v4.2.1.tar.gz"
     arch: "amd64"
